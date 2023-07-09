@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de Agrupamento</title>
+    <style>
+        body {
+            background-color: #a9a6b9;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header {
+            background-color: aquamarine;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 3px 1px black;
+        }
+        nav {
+            background-color: cadetblue;
+            padding: 3px;
+            border-radius: 5px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.432);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: #0d76a0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 3px 1px black;
+        }
+        article {
+            background-color: #1297cc;
+            border-radius: 9px;
+        }
+        article > aside {
+            background-color: #0a5674;
+            color: aliceblue;
+            border-radius: 9px;
+            text-align: center;
+            margin-bottom: 3px;
+            box-shadow: 2px 2px 3px 1px black;
+            padding: 6px;
+        }
+        footer {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 8px;
+            margin: 0px;
+        }
+        h1 {
+            text-align: center;
+            color: #0a5674;
+            
+        }
+        footer > p::after {
+            content: ' ✠ ';
+        }
+        footer > p::before {
+            content: ' ✠ ';
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site de Estudos</h1>
+        <nav>
+            <a href="#">Link Teste</a>
+            <a href="#">Link Teste</a>
+            <a href="#">Link Teste</a>
+            <a href="#">Link Teste</a>
+            <a href="#">Link Teste</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assunto">
+
+        </section>
+        <section>
+            <article>
+                <h2>Notícia do Dia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aperiam eveniet neque dignissimos ad et commodi suscipit, culpa dolor maiores cum delectus doloribus impedit earum, facilis quas nihil blanditiis aliquam!</p>
+                <aside>Escrito por José Pereira</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Alessandro Cordeiro </p>
+    </footer>
+</body>
+</html>

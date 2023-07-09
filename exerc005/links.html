@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+        }
+        a {
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: #f00505;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+        a:active {
+            color: aqua;
+        }
+
+        a::before{
+            content: '➞';
+        }
+        a::after {
+            content: '♞';
+            text-decoration: none;
+            font-weight: normal;
+            color: #3a6e08;
+        }
+        .especial::before{
+            content: '✠';
+        }
+        .especial::after {
+            content: '✠';
+            text-decoration: none;
+            font-weight: normal;
+            color: #3a6e08;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">Site Google</a></li>
+        <li><a href="https://www.Netvasco.com.br" target="_blank">Site Netvasco</a></li>
+        <li><a href="https://www.alescordeiro.site" target="_blank" class="especial">Site Alessandro Cordeiro</a></li>
+    </ul>
+</body>
+</html>
