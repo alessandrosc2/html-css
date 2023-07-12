@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+
+            border: 1px solid black;
+            padding: 5px;
+
+        }
+
+        col.cnome {
+            background-color: rgb(9, 233, 158);
+        }
+
+        .roxo {
+            background-color: rgb(182, 124, 236);
+        }
+
+        col.cgroup {
+            background-color: bisque;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="roxo">
+            <col class="cgroup" span="2">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>João Paulo</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Encanador</td>
+        </tr>
+        <tr>
+            <td>Daniela</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Design</td>
+        </tr>
+        <tr>
+            <td>Alexia</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Comediante</td>
+        </tr>
+        <tr>
+            <td>Rafael Hidro</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Jornaleiro</td>
+        </tr>
+        <tr>
+            <td>Pedro Santos</td>
+            <td>M</td>
+            <td>31</td>
+            <td>Motorista</td>
+        </tr>
+        <tr>
+            <td>Claudia Santos</td>
+            <td>F</td>
+            <td>42</td>
+            <td>Vendedora</td>
+        </tr>
+        <tr>
+            <td>Gustavo Silva</td>
+            <td>M</td>
+            <td>41</td>
+            <td>Pedreiro</td>
+        </tr>
+    </table>
+</body>
+</html>
