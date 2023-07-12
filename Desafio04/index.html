@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+
+        }
+
+        table {
+
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: red;
+            color: white;
+        }
+
+        td {
+
+            border: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        th {
+
+            border: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+
+            }
+
+        thead {
+            background-color: rgb(233, 229, 10);
+            color: rgb(19, 3, 3);
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        td.nome {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        td.nome2 {
+            background-color: rgb(10, 214, 44);
+            color: white;
+        }
+
+        td.nome3 {
+            background-color: rgb(6, 226, 241);
+            color: white;
+        }
+
+        td.nome4 {
+            background-color: rgb(241, 100, 6);
+            color: white;
+        }
+
+        th.fino {
+            padding: 15px;
+        }
+
+        tbody > tr:nth-child(odd) {
+
+            background-color: rgb(236, 1, 185);
+            color: white;
+
+        }
+
+        tbody > tr:nth-child(even) {
+
+            background-color: rgb(30, 7, 235);
+            color: white;
+
+            }
+
+            /* nth-child() = even - pares / odd - ímpares 
+            ou posso usar  nth-child(2n) = para pular de 2 em 2... ou 2n-1
+            */
+
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>FILMES FAVORITOS</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col" style="width: 450px;" class="fino">Nomes</th>
+                <th scope="colgroup" colspan="3" style="width: 450px;" class="fino">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td scope="col" class="nome">Ana Maria</td>
+                <td scope="col" class="nome2">Alien</td>
+                <td scope="col" class="nome2">Rambo</td>
+                <td scope="col" class="nome2">Vingadores</td>
+            </tr>
+            <tr>
+
+                <td scope="col" class="nome">Joana Dark</td>
+                <td scope="col" class="nome2">Flash</td>
+                <td scope="col" class="nome2">Rock</td>
+                <td scope="col" class="nome2">Thor</td>
+            </tr>
+            <tr>
+
+                <td scope="col" class="nome">Suzana Regia</td>
+                <td scope="col" class="nome2">Naufrago</td>
+                <td scope="col" class="nome2">X-Men</td>
+                <td scope="col" class="nome2">Batman</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td scope="col" class="nome4">João Paulo</td>
+                <td scope="col" class="nome3">Animais</td>
+                <td scope="col" class="nome3">Kong</td>
+                <td scope="col" class="nome3">Luta</td>
+            </tr>
+            <tr>
+
+                <td scope="col" class="nome4">Ramiro Pereira</td>
+                <td scope="col" class="nome3">Flash</td>
+                <td scope="col" class="nome3">Rock</td>
+                <td scope="col" class="nome3">Thor</td>
+            </tr>
+            <tr>
+
+                <td scope="col" class="nome4">José Amando</td>
+                <td scope="col" class="nome3">Naufrago</td>
+                <td scope="col" class="nome3">X-Men</td>
+                <td scope="col" class="nome3">Batman</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="rowgroup" colspan="5">FIM</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
