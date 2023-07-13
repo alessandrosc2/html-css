@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+        }
+
+        iframe#tela {
+            width: 105vh;
+            height: 800px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma Escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quod error aliquam cum, ducimus officia itaque ipsum dicta voluptatum, hic provident earum. Enim iure saepe, a amet ratione beatae iusto?</p>
+
+    <ul>
+        <li><a href="pagina.html" target="frame">Primeira página</a></li>
+        <li><a href="index.html" target="frame">Segunda página</a></li>
+        <li><a href="pagina.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum eaque mollitia assumenda, sint explicabo perferendis aliquid officia amet soluta, doloremque illo aut pariatur reiciendis ut, voluptate quibusdam provident ab ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eum minus, doloremque ullam tempora repudiandae, accusantium libero deserunt non cum maiores dicta perferendis ducimus id error quo commodi corrupti et.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1> Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum eaque mollitia assumenda, sint explicabo perferendis aliquid officia amet soluta, doloremque illo aut pariatur reiciendis ut, voluptate quibusdam provident ab ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eum minus, doloremque ullam tempora repudiandae, accusantium libero deserunt non cum maiores dicta perferendis ducimus id error quo commodi corrupti et.</p> <img src='img/vingadores.jpg'>">
+        <p>Seu navegador não é compatível com iframes</p>
+
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, nihil rerum veritatis odit magni laudantium tempora autem ad perferendis ducimus molestiae corrupti beatae, cupiditate et dolorum quisquam numquam ex in. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo hic ab deserunt ipsam totam debitis eligendi amet natus iste est? Amet delectus nostrum sapiente quibusdam ab, voluptates consequuntur cupiditate labore?</p>
+</body>
+</html>
